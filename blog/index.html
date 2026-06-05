@@ -1,1 +1,632 @@
+<!DOCTYPE html>
+<html lang="es-PY">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Blog de Sutura y Educación Médica | InMed Paraguay</title>
+  <meta name="description" content="Artículos sobre sutura, hilos de sutura, instrumental médico, habilidades clínicas y entrenamiento para estudiantes de Medicina, Enfermería, Odontología y Veterinaria en Paraguay." />
+  <meta name="keywords" content="tipos de sutura, hilo de sutura, kit de sutura, instrumental médico, entrenamiento de sutura, estudiantes de medicina, habilidades clínicas, Paraguay" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="InMed Paraguay" />
+  <meta name="theme-color" content="#E10613" />
+  <meta name="language" content="Spanish" />
+
+  <link rel="canonical" href="./" />
+
+  <meta property="og:title" content="Blog de Sutura y Educación Médica | InMed Paraguay" />
+  <meta property="og:description" content="Guías prácticas sobre sutura, instrumental médico y entrenamiento clínico para estudiantes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://inmed-py.github.io/kit-de-sutura-paraguay/blog/" />
+  <meta property="og:image" content="https://inmed-py.github.io/kit-de-sutura-paraguay/img/kit-de-sutura-paraguay-1.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog de Sutura y Educación Médica | InMed Paraguay" />
+  <meta name="twitter:description" content="Artículos sobre sutura, hilos de sutura, instrumental médico y entrenamiento clínico." />
+  <meta name="twitter:image" content="https://inmed-py.github.io/kit-de-sutura-paraguay/img/kit-de-sutura-paraguay-1.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog de Sutura y Educación Médica",
+    "url": "https://inmed-py.github.io/kit-de-sutura-paraguay/blog/",
+    "description": "Artículos sobre sutura, hilos de sutura, instrumental médico, habilidades clínicas y entrenamiento para estudiantes.",
+    "inLanguage": "es-PY",
+    "publisher": {
+      "@type": "Organization",
+      "name": "InMed Paraguay",
+      "url": "https://inmed-py.github.io/kit-de-sutura-paraguay/"
+    },
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Tipos de sutura: guía para estudiantes de Medicina",
+        "url": "https://inmed-py.github.io/kit-de-sutura-paraguay/blog/tipos-de-sutura.html"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Qué es un hilo de sutura y para qué sirve",
+        "url": "https://inmed-py.github.io/kit-de-sutura-paraguay/blog/hilo-de-sutura.html"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Cómo aprender sutura desde cero",
+        "url": "https://inmed-py.github.io/kit-de-sutura-paraguay/blog/como-aprender-sutura.html"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --red: #E10613;
+      --red-dark: #B9040F;
+      --red-soft: #FFE7E9;
+      --white: #F5F6F8;
+      --gray-light: #F6F7EB;
+      --dark: #2B2F36;
+      --dark-2: #171A1F;
+      --muted: #646B76;
+      --line: rgba(43, 47, 54, 0.14);
+      --shadow: 0 26px 70px rgba(43, 47, 54, 0.12);
+      --shadow-red: 0 18px 42px rgba(225, 6, 19, 0.24);
+      --radius: 28px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Poppins, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 20% 4%, rgba(225, 6, 19, 0.08), transparent 28rem),
+        linear-gradient(135deg, var(--white) 0%, #FFFFFF 44%, var(--gray-light) 100%);
+      color: var(--dark);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .top-line {
+      height: 7px;
+      background: linear-gradient(90deg, var(--red), var(--red-dark), var(--red));
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(245, 246, 248, 0.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 900;
+      color: var(--red);
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, var(--red), var(--red-dark));
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 2rem;
+      font-weight: 950;
+      box-shadow: var(--shadow-red);
+    }
+
+    .brand-text {
+      font-size: 2rem;
+      line-height: .85;
+      letter-spacing: -0.04em;
+    }
+
+    .brand-text small {
+      display: block;
+      margin-top: 7px;
+      color: var(--red);
+      font-size: .58rem;
+      letter-spacing: .08em;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--dark);
+      font-weight: 750;
+      font-size: .94rem;
+    }
+
+    .nav-links a {
+      opacity: .76;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+      color: var(--red);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border-radius: 16px;
+      font-weight: 900;
+      cursor: pointer;
+      border: 1px solid var(--line);
+      transition: transform .22s ease, box-shadow .22s ease, background .22s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary {
+      background: var(--red);
+      color: #fff;
+      border-color: var(--red);
+      box-shadow: 0 12px 28px rgba(225, 6, 19, .18);
+    }
+
+    .btn-primary:hover {
+      background: var(--red-dark);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--dark);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: var(--red-soft);
+      color: var(--red);
+      font-size: .88rem;
+      font-weight: 900;
+      border: 1px solid rgba(225,6,19,.14);
+      text-transform: uppercase;
+      letter-spacing: .03em;
+    }
+
+    .hero {
+      padding: 88px 0 58px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero h1 {
+      margin: 22px auto 0;
+      max-width: 980px;
+      font-size: clamp(2.45rem, 5vw, 5rem);
+      line-height: 1;
+      letter-spacing: -.055em;
+      color: var(--dark-2);
+      font-weight: 950;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: var(--red);
+    }
+
+    .hero p {
+      margin: 22px auto 0;
+      max-width: 830px;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 1.75vw, 1.25rem);
+      font-weight: 500;
+    }
+
+    .hero-actions {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+    }
+
+    section {
+      padding: 68px 0;
+    }
+
+    .section-head {
+      max-width: 790px;
+      margin-bottom: 34px;
+    }
+
+    .section-head h2 {
+      margin-top: 14px;
+      font-size: clamp(2rem, 4vw, 3.35rem);
+      line-height: 1;
+      letter-spacing: -.045em;
+      color: var(--dark-2);
+    }
+
+    .section-head p {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.78);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 18px 45px rgba(43,47,54,.07);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      min-height: 280px;
+    }
+
+    .card .tag {
+      color: var(--red);
+      font-weight: 900;
+      font-size: .78rem;
+      letter-spacing: .045em;
+      text-transform: uppercase;
+    }
+
+    .card h3 {
+      color: var(--dark-2);
+      font-size: 1.35rem;
+      line-height: 1.16;
+      letter-spacing: -.02em;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-weight: 500;
+      flex: 1;
+    }
+
+    .card a {
+      color: var(--red);
+      font-weight: 950;
+    }
+
+    .featured {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 24px;
+      align-items: stretch;
+      margin-bottom: 24px;
+    }
+
+    .featured-box {
+      border-radius: 34px;
+      padding: clamp(28px, 5vw, 54px);
+      background:
+        linear-gradient(135deg, rgba(43,47,54,.96), rgba(23,26,31,.96)),
+        radial-gradient(circle at 18% 20%, rgba(225,6,19,.3), transparent 20rem);
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .featured-box h2 {
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 1;
+      letter-spacing: -.055em;
+      margin: 16px 0;
+    }
+
+    .featured-box p {
+      color: rgba(255,255,255,.78);
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .topic-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .topic {
+      background: rgba(255,255,255,.78);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+      font-weight: 850;
+      color: var(--dark);
+      box-shadow: 0 12px 32px rgba(43,47,54,.05);
+    }
+
+    .cta-box {
+      border-radius: 36px;
+      padding: clamp(28px, 5vw, 54px);
+      background:
+        linear-gradient(135deg, rgba(225,6,19,.96), rgba(185,4,15,.96)),
+        radial-gradient(circle at top right, rgba(255,255,255,.28), transparent 18rem);
+      color: #fff;
+      text-align: center;
+      box-shadow: var(--shadow-red);
+    }
+
+    .cta-box h2 {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1;
+      letter-spacing: -.045em;
+      margin-bottom: 16px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,.86);
+      max-width: 760px;
+      margin: 0 auto 28px;
+      font-weight: 500;
+    }
+
+    footer {
+      padding: 34px 0;
+      background: var(--red);
+      color: #fff;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-weight: 750;
+    }
+
+    .footer-grid small {
+      opacity: .82;
+    }
+
+    @media (max-width: 960px) {
+      .grid,
+      .featured {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+      }
+
+      .nav-links {
+        width: 100%;
+        overflow-x: auto;
+        gap: 10px;
+        padding-bottom: 6px;
+      }
+
+      .nav-links a {
+        padding: 8px 11px;
+        border-radius: 999px;
+        background: rgba(255,255,255,.78);
+        border: 1px solid var(--line);
+        font-size: .82rem;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: min(100% - 26px, var(--max));
+      }
+
+      .hero {
+        padding: 58px 0 38px;
+      }
+
+      .brand-text {
+        font-size: 1.65rem;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .card {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-line"></div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../" aria-label="INMED Educación Médica">
+        <div class="brand-mark">+</div>
+        <div class="brand-text">
+          InMed
+          <small>Equipos médicos y accesorios para estudiantes</small>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="../">Inicio</a>
+        <a href="./">Blog</a>
+        <a href="../#incluye">Qué incluye</a>
+        <a href="../#pedido">Reservar</a>
+      </nav>
+
+      <a class="btn btn-primary" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20kit%20de%20sutura" target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="pill">Blog InMed</span>
+        <h1>Blog de Sutura <span>y Educación Médica</span></h1>
+        <p>
+          Guías prácticas sobre sutura, hilos de sutura, instrumental médico, habilidades clínicas y entrenamiento para estudiantes de Medicina, Enfermería, Odontología y Veterinaria.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="../">Ver Kit de Sutura</a>
+          <a class="btn btn-secondary" href="#articulos">Leer artículos</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container featured">
+        <div class="featured-box">
+          <span class="pill">Artículo destacado</span>
+          <h2>Tipos de sutura: guía para estudiantes de Medicina</h2>
+          <p>
+            Una guía clara sobre los tipos de sutura más utilizados, sus diferencias, materiales necesarios y cómo comenzar a practicar de forma segura.
+          </p>
+          <a class="btn btn-primary" href="./tipos-de-sutura.html">Leer artículo</a>
+        </div>
+
+        <div class="topic-list" aria-label="Temas del blog">
+          <div class="topic">🧵 Tipos de sutura e hilos de sutura</div>
+          <div class="topic">✂️ Instrumental médico para práctica</div>
+          <div class="topic">🎓 Entrenamiento para estudiantes</div>
+          <div class="topic">🧰 Kit de sutura y habilidades clínicas</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="articulos">
+      <div class="container">
+        <div class="section-head">
+          <span class="pill">Artículos recientes</span>
+          <h2>Guías para aprender y practicar sutura</h2>
+          <p>
+            Contenidos pensados para estudiantes que buscan comprender conceptos básicos, practicar mejor y elegir materiales adecuados para su formación clínica.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <span class="tag">Sutura</span>
+            <h3>Tipos de sutura: guía para estudiantes de Medicina</h3>
+            <p>
+              Conocé las técnicas de sutura más utilizadas, cuándo se emplean y cómo comenzar a practicar correctamente.
+            </p>
+            <a href="./tipos-de-sutura.html">Leer artículo →</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Hilos</span>
+            <h3>Qué es un hilo de sutura y para qué sirve</h3>
+            <p>
+              Materiales, clasificación, características y usos más frecuentes de los hilos de sutura en el entrenamiento.
+            </p>
+            <a href="./hilo-de-sutura.html">Leer artículo →</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Entrenamiento</span>
+            <h3>Cómo aprender sutura desde cero</h3>
+            <p>
+              Guía paso a paso para estudiantes que desean comenzar a desarrollar habilidades prácticas con seguridad.
+            </p>
+            <a href="./como-aprender-sutura.html">Leer artículo →</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Instrumental</span>
+            <h3>Porta agujas Mayo-Hegar: guía completa</h3>
+            <p>
+              Conocé uno de los instrumentos más utilizados durante la práctica de sutura y su función principal.
+            </p>
+            <a href="./porta-agujas-mayo-hegar.html">Leer artículo →</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Kit de sutura</span>
+            <h3>Qué incluye un kit de sutura para estudiantes</h3>
+            <p>
+              Descubrí los materiales esenciales para practicar puntos, nudos, coordinación manual y manejo de instrumental.
+            </p>
+            <a href="./kit-de-sutura-para-estudiantes.html">Leer artículo →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-box">
+          <h2>¿Listo para comenzar a practicar?</h2>
+          <p>
+            Conocé el Kit de Sutura InMed y desarrollá tus habilidades clínicas con materiales pensados para entrenamiento.
+          </p>
+          <a class="btn btn-secondary" href="../#pedido">Reservar mi Kit</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>INMED · Educación Médica</strong><br>
+        <small>Blog de sutura, instrumental médico y habilidades clínicas</small>
+      </div>
+      <div>
+        <a href="../">Inicio</a>
+        ·
+        <a href="https://www.instagram.com/in_medpy/" target="_blank" rel="noopener">Instagram</a>
+        ·
+        <a href="https://wa.me/595991950031" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
