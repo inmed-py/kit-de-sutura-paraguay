@@ -227,9 +227,9 @@
 
   <style>
     :root {
-      --red: #E10613;
-      --red-dark: #B9040F;
-      --red-soft: #FFE7E9;
+      --red: #0A2540;
+      --red-dark: #001528;
+      --red-soft: #EBF3FA;
       --whatsapp: #25D366;
       --whatsapp-dark: #1BD741;
       --white: #F5F6F8;
@@ -247,7 +247,7 @@
       --muted: #4C5365;
       --line: rgba(43, 47, 54, 0.14);
       --shadow: 0 26px 70px rgba(43, 47, 54, 0.12);
-      --shadow-red: 0 18px 42px rgba(225, 6, 19, 0.24);
+      --shadow-red: 0 18px 42px rgba(10, 37, 64, 0.24);
       --shadow-green: 0 18px 42px rgba(37, 211, 102, 0.24);
       --radius: 28px;
       --max: 1180px;
@@ -489,10 +489,11 @@
     }
 
     .btn-primary {
-      background: var(--whatsapp);
-      color: #fff;
-      border-color: var(--whatsapp);
-      box-shadow: 0 12px 28px rgba(37, 211, 102, .18);
+      background: linear-gradient(90deg, var(--whatsapp), #128C7E);
+      color: #fff !important;
+      border: none;
+      font-weight: 800;
+      box-shadow: 0 14px 32px rgba(37, 211, 102, .28);
     }
 
     .btn-primary {
@@ -2140,6 +2141,36 @@
   }
   </script>
 
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '334166506917141');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=334166506917141&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Google Analytics (GA4) - Preparado -->
+  <!-- Coloque seu ID (começando com G-) no lugar de G-SEU_ID_AQUI assim que conseguir acessar o painel -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEU_ID_AQUI"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SEU_ID_AQUI');
+  </script>
+  <!-- End Google Analytics -->
+
 </head>
 
 <body>
@@ -2160,7 +2191,90 @@
     6. Troque "Consultar" por preço real, se quiser.
   -->
 
-  <div class="top-line"></div>
+  <!-- Promo Banner Totalmente Animado -->
+  <style>
+    @keyframes shimmerBanner {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @keyframes pulseLightning {
+      0%, 100% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 2px #FFB800); }
+      50% { transform: scale(1.3) rotate(10deg); filter: drop-shadow(0 0 8px #FFB800); }
+    }
+    @keyframes fadeText {
+      0%, 45% { opacity: 1; transform: translateY(0); }
+      50% { opacity: 0; transform: translateY(-5px); }
+      55%, 95% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(5px); }
+    }
+    .promo-banner-animated {
+      background: linear-gradient(-45deg, #0A2540, #001528, #00B4D8, #0A2540);
+      background-size: 300% 300%;
+      animation: shimmerBanner 8s ease infinite;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 12px 15px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+      position: relative;
+    }
+    .promo-banner-animated .icon-lightning {
+      display: inline-block;
+      animation: pulseLightning 1.5s infinite ease-in-out;
+      font-size: 1.1rem;
+    }
+    .banner-text-container {
+      display: inline-block;
+      min-width: 280px;
+    }
+  </style>
+
+  <div class="promo-banner-animated" id="promoBanner">
+    <span class="icon-lightning">⚡</span>
+    <div class="banner-text-container">
+      <span id="bannerText">¡ATENCIÓN: Últimos 15 Kits con Precio Promo de Gs. 239.000!</span>
+    </div>
+    <span class="icon-lightning" style="animation-delay: 0.75s;">🔥</span>
+  </div>
+
+  <script>
+    // Rotatividade de mensagens estratégicas focadas em Vendas/Urgncia
+    const bannerMessages = [
+      "¡ATENCIÓN: Últimos 15 Kits con Precio Promo de Gs. 239.000!",
+      "👩‍⚕️ ¡Más de 200 kits vendidos que potencian tu práctica profesional!",
+      "🚀 ¿Te vas a quedar atrás? ¡Evolucioná en tu carrera hoy!",
+      "🎁 Hilos de Seda y Nylon + Estuche Premium incluidos"
+    ];
+    let currentMsgIndex = 0;
+    const bannerTextElement = document.getElementById("bannerText");
+
+    setInterval(() => {
+      // Fade out
+      bannerTextElement.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+      bannerTextElement.style.opacity = "0";
+      bannerTextElement.style.transform = "translateY(-5px)";
+
+      setTimeout(() => {
+        currentMsgIndex = (currentMsgIndex + 1) % bannerMessages.length;
+        bannerTextElement.textContent = bannerMessages[currentMsgIndex];
+        
+        // Fade in
+        bannerTextElement.style.transform = "translateY(5px)";
+        setTimeout(() => {
+          bannerTextElement.style.opacity = "1";
+          bannerTextElement.style.transform = "translateY(0)";
+        }, 50);
+      }, 500);
+    }, 4500);
+  </script>
+  <!-- Fin Promo Banner Animado -->
 
   <header>
     <div class="container nav">
@@ -2181,7 +2295,7 @@
         <a href="#faq">FAQ</a>
       </nav>
 
-      <a class="btn btn-primary" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20kit%20de%20sutura" target="_blank" rel="noopener noreferrer">
+      <a class="btn btn-primary" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20kit%20de%20sutura" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq === 'function') fbq('track', 'Contact'); if(typeof gtag === 'function') gtag('event', 'click_whatsapp', { event_category: 'Contact', event_label: 'Boton' });">
         WhatsApp
       </a>
     </div>
@@ -2193,10 +2307,15 @@
         <div class="reveal">
           <span class="pill">El mejor costo-beneficio de Paraguay</span>
 
+          <div class="reviews-badge" style="margin: 12px 0 8px 0; display: flex; align-items: center; gap: 8px;">
+            <span style="color: #FFB800; font-size: 1.15rem;">⭐⭐⭐⭐⭐</span>
+            <span style="font-size: 0.85rem; font-weight: 700; color: #0A2540; background: #EBF3FA; padding: 3px 10px; border-radius: 12px; border: 1px solid rgba(10, 37, 64, 0.1);">4.9 / 5 (Más de 200 kits vendidos en Paraguay)</span>
+          </div>
+
           <h1>Kit de Sutura Premium de 25 Piezas <span>¡No vas a encontrar otro más completo a este precio!</span></h1>
 
           <p class="lead">
-            El kit de entrenamiento de sutura más completo de Paraguay com um total de 25 piezas: piel simuladora de 3 capas, instrumental de entrenamiento de acero inoxidable, hilos nylon y seda, estuche y materiales pensados para estudiantes de Medicina, Odontología, Enfermería y Veterinaria.
+            El kit de entrenamiento de sutura más completo de Paraguay con un total de 25 piezas: piel simuladora de 3 capas, instrumental de acero inoxidable, hilos nylon y seda, estuche y materiales. <strong style="color: #0A2540;">¡Ya son más de 200 kits vendidos que hacen evolucionar al estudiante en su práctica profesional!</strong> <span style="color: #00B4D8; font-weight: 800;">¿Y vos, te vas a quedar atrás?</span>
           </p>
 
           <div class="hero-actions">
@@ -2217,6 +2336,11 @@
             <span>✓ Hilos nylon y seda incluidos</span>
             <span>✓ Retiro en Asunción</span>
             <span>✓ Envíos a todo Paraguay</span>
+          </div>
+
+          <div class="uni-trust-strip" style="margin-top: 20px; padding: 12px 16px; background: #FFFFFF; border-radius: 16px; border: 1px solid rgba(10, 37, 64, 0.12); box-shadow: 0 8px 20px rgba(10, 37, 64, 0.05); font-size: 0.85rem; color: #2B2F36; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <span style="font-weight: 800; color: #0A2540;">👩‍⚕️ El Kit #1 elegido en:</span>
+            <span style="font-weight: 700; color: #00B4D8;">UNA</span> • <span style="font-weight: 700; color: #00B4D8;">UCA</span> • <span style="font-weight: 700; color: #00B4D8;">UCP (CDE y PJC)</span> • <span style="font-weight: 700; color: #00B4D8;">UNINTER</span> • <span style="font-weight: 700; color: #00B4D8;">UMAX</span> • <span style="font-weight: 700; color: #00B4D8;">UNINORTE</span>
           </div>
 
           <div class="promo-highlight" aria-label="Precio promocional del kit de sutura">
@@ -2751,7 +2875,7 @@
     </section>
   </main>
 
-  <a class="whatsapp-float" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20kit%20de%20sutura" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
+  <a class="whatsapp-float" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20kit%20de%20sutura" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp" onclick="if(typeof fbq === 'function') fbq('track', 'Contact'); if(typeof gtag === 'function') gtag('event', 'click_whatsapp', { event_category: 'Contact', event_label: 'Boton' });">
     ✆
   </a>
 
@@ -2783,7 +2907,7 @@
         <a href="blog/">Blog</a> · 
         <a href="https://www.instagram.com/in_medpy/" target="_blank" rel="noopener noreferrer">Instagram</a>
         ·
-        <a href="https://wa.me/595991950031" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://wa.me/595991950031" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq === 'function') fbq('track', 'Contact'); if(typeof gtag === 'function') gtag('event', 'click_whatsapp', { event_category: 'Contact', event_label: 'Boton' });">WhatsApp</a>
       </div>
     </div>
   </footer>
@@ -2845,6 +2969,8 @@
 
       const whatsappNumber = "595991950031";
       const url = `https://wa.me/${whatsappNumber}?text=${mensaje}`;
+      if (typeof fbq === 'function') { fbq('track', 'Contact'); }
+      if (typeof gtag === 'function') { gtag('event', 'click_whatsapp', { event_category: 'Contact', event_label: 'Formulario' }); }
       window.open(url, "_blank", "noopener");
     });
     const mainImage = document.getElementById("mainImage");
