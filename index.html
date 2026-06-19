@@ -2308,7 +2308,7 @@
 <body>
   <!-- Global particles container: provides a network effect across the entire page -->
   <div id="particles-js" aria-hidden="true"></div>
-  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+  <a class="skip-link" href="#inicio" title="Saltar al contenido principal">Saltar al contenido principal</a>
   <!--
     EDITAR ANTES DE PUBLICAR:
     1. Troque tudominio.com pelo seu domínio real.
@@ -2410,7 +2410,7 @@
 
   <header>
     <div class="container nav">
-      <a class="brand" href="#inicio" aria-label="INMED Educación Médica">
+      <a class="brand" href="#inicio" aria-label="INMED Educación Médica" title="INMED Educación Médica - Inicio">
         <img src="https://inmed-py.github.io/kit-de-sutura-paraguay/img/logo-inmed.webp" alt="InMed Educación Médica" class="brand-logo">
         <div class="brand-text">
           InMed
@@ -2419,15 +2419,15 @@
       </a>
 
       <nav class="nav-links" aria-label="Navegación principal">
-        <a href="#inicio">Inicio</a>
-        <a href="blog/">Blog</a>
+        <a href="#inicio" title="Volver al inicio de la página">Inicio</a>
+        <a href="blog/" title="Leer artículos de medicina en nuestro blog">Blog</a>
         
-        <a href="#incluye">Qué incluye</a>
-        <a href="#pedido">Consultar</a>
-        <a href="#faq">FAQ</a>
+        <a href="#incluye" title="Conocer todas las piezas incluidas en el kit">Qué incluye</a>
+        <a href="#pedido" title="Ir al formulario para hacer pedido por WhatsApp">Consultar</a>
+        <a href="#faq" title="Ver preguntas frecuentes y respuestas rápidas">FAQ</a>
       </nav>
 
-      <a class="btn btn-primary" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20kit%20de%20sutura" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq === 'function') fbq('track', 'Contact'); if(typeof gtag === 'function') gtag('event', 'click_whatsapp', { event_category: 'Contact', event_label: 'Boton' });">
+      <a class="btn btn-primary" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20kit%20de%20sutura" target="_blank" rel="noopener noreferrer" title="Abrir chat directo de WhatsApp con InMed" onclick="if(typeof fbq === 'function') fbq('track', 'Contact'); if(typeof gtag === 'function') gtag('event', 'click_whatsapp', { event_category: 'Contact', event_label: 'Boton' });">
         WhatsApp
       </a>
     </div>
@@ -2453,7 +2453,7 @@
 
           <div class="hero-actions desktop-only">
             <a class="btn btn-primary" href="#pedido" data-event="cta_reservar_hero">📲 Consultar disponibilidad por WhatsApp</a>
-            <a class="btn btn-secondary" href="https://www.instagram.com/in_medpy/" target="_blank" rel="noopener noreferrer">Visitar Instagram</a>
+            <a class="btn btn-secondary" href="https://www.instagram.com/in_medpy/" target="_blank" rel="noopener noreferrer" title="Visitar nuestro perfil oficial en Instagram (@in_medpy)">Visitar Instagram</a>
           </div>
 
           <!--
@@ -2924,7 +2924,7 @@
 
           <div class="form-actions">
             <button class="btn btn-primary" type="submit" data-event="form_whatsapp_submit">Consultar por WhatsApp</button>
-            <a class="btn btn-secondary" href="https://www.instagram.com/in_medpy/" target="_blank" rel="noopener noreferrer">Visitar Instagram</a>
+            <a class="btn btn-secondary" href="https://www.instagram.com/in_medpy/" target="_blank" rel="noopener noreferrer" title="Visitar nuestro perfil oficial en Instagram (@in_medpy)">Visitar Instagram</a>
           </div>
         </form>
       </div>
@@ -3084,7 +3084,7 @@
           </p>
           <div class="hero-actions" style="justify-content:center; position:relative;">
             <a class="btn btn-primary" href="#pedido" data-event="cta_reservar_hero">Consultar disponibilidad por WhatsApp</a>
-            <a class="btn btn-secondary" href="https://www.instagram.com/in_medpy/" target="_blank" rel="noopener noreferrer">Visitar Instagram</a>
+            <a class="btn btn-secondary" href="https://www.instagram.com/in_medpy/" target="_blank" rel="noopener noreferrer" title="Visitar nuestro perfil oficial en Instagram (@in_medpy)">Visitar Instagram</a>
           </div>
         </div>
       </div>
@@ -3120,10 +3120,10 @@
         <small>Loma Pytã - Asunción</small>
       </div>
       <div>
-        <a href="blog/">Blog</a> · 
+        <a href="blog/" title="Leer artículos de medicina en nuestro blog">Blog</a> · 
         <a href="https://www.instagram.com/in_medpy/" target="_blank" rel="noopener noreferrer">Instagram</a>
         ·
-        <a href="https://wa.me/595991950031" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq === 'function') fbq('track', 'Contact'); if(typeof gtag === 'function') gtag('event', 'click_whatsapp', { event_category: 'Contact', event_label: 'Boton' });">WhatsApp</a>
+        <a href="https://wa.me/595991950031" target="_blank" rel="noopener noreferrer" title="Abrir chat directo de WhatsApp con InMed" onclick="if(typeof fbq === 'function') fbq('track', 'Contact'); if(typeof gtag === 'function') gtag('event', 'click_whatsapp', { event_category: 'Contact', event_label: 'Boton' });">WhatsApp</a>
       </div>
     </div>
   </footer>
@@ -3377,5 +3377,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0e2f0e0f98d0ba0',t:'MTc4MTg3NjM3Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0e2f31d6bab0ba0',t:'MTc4MTg3NjQ2OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
