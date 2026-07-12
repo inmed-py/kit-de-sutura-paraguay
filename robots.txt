@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://inmed-py.github.io/kit-de-sutura-paraguay/sitemap.xml
-
