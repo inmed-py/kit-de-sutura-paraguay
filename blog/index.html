@@ -16,13 +16,11 @@
 <meta content="Guías prácticas sobre sutura, instrumental médico y entrenamiento clínico para estudiantes." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://inmed-py.github.io/kit-de-sutura-paraguay/blog/" property="og:url"/>
-<meta content="https://inmed-py.github.io/kit-de-sutura-paraguay/img/kit-de-sutura-paraguay-1.jpg" property="og:image"/>
+<meta content="https://inmed-py.github.io/kit-de-sutura-paraguay/img/kit-de-sutura-paraguay-1.webp" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Blog de Sutura y Educación Médica | InMed Paraguay" name="twitter:title"/>
 <meta content="Artículos sobre sutura, hilos de sutura, instrumental médico y entrenamiento clínico." name="twitter:description"/>
-<meta content="https://inmed-py.github.io/kit-de-sutura-paraguay/img/kit-de-sutura-paraguay-1.jpg" name="twitter:image"/>
-<!-- Load the particles.js library with defer so it doesn't block rendering -->
-<script defer="" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<meta content="https://inmed-py.github.io/kit-de-sutura-paraguay/img/kit-de-sutura-paraguay-1.webp" name="twitter:image"/>
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -554,30 +552,12 @@
       .card {
         min-height: auto;
       }
-
-    /* Fixed full-viewport canvas for the animated particles background.
-       This ensures the network effect spans the entire page without
-       interfering with user interactions. */
-    #particles-js {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-    }
-    }
+}
   
     body{
       position:relative;
     }
-
-    #particles-js{
-      position:fixed;
-      inset:0;
-      z-index:1;
-      pointer-events:none;
-    }
-
-    header,
+header,
     main,
     footer{
       position:relative;
@@ -614,6 +594,7 @@ box-shadow:0 10px 25px rgba(225,6,19,.35);
 }
 
 </style>
+<script defer src="../site-analytics.js"></script>
 </head>
 <body id="topo">
 <div class="top-line"></div>
@@ -818,59 +799,10 @@ box-shadow:0 10px 25px rgba(225,6,19,.35);
         ·
         <a href="https://www.instagram.com/in_medpy/" rel="noopener" target="_blank">Instagram</a>
         ·
-        <a href="https://wa.me/595991950031" rel="noopener" target="_blank">WhatsApp</a>
+        <a data-track="blog_whatsapp" data-wa="true" data-wa-source="blog" href="https://wa.me/595991950031" rel="noopener" target="_blank">WhatsApp</a>
 </div>
 </div>
 </footer>
-<!-- Global particles container for network animation -->
-<div aria-hidden="true" id="particles-js"></div>
-<!-- Initialize the particles.js effect after the DOM has loaded -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    if (window.particlesJS) {
-      particlesJS('particles-js', {
-        particles: {
-          number: {
-            value: 65,
-            density: { enable: true, value_area: 1000 }
-          },
-          color: { value: ['#E10613'] },
-          shape: { type: 'circle' },
-          opacity: { value: 0.18, random: false },
-          size: { value: 3, random: true },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: '#E10613',
-            opacity: 0.15,
-            width: 1
-          },
-          move: {
-            enable: true,
-            speed: 1.4,
-            direction: 'none',
-            random: false,
-            straight: false,
-            out_mode: 'out',
-            bounce: false
-          }
-        },
-        interactivity: {
-          detect_on: 'canvas',
-          events: {
-            onhover: { enable: true, mode: 'grab' },
-            onclick: { enable: false },
-            resize: true
-          },
-          modes: {
-            grab: { distance: 180, line_linked: { opacity: 0.35 } }
-          }
-        },
-        retina_detect: true
-      });
-    }
-  });
-  </script>
 <a href="#topo" class="scroll-top">↑</a>
 </body>
 </html>

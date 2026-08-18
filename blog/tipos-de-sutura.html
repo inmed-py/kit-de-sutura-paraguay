@@ -724,6 +724,7 @@ iframe {
 }
 
 </style>
+<script defer src="../site-analytics.js"></script>
 </head>
 
 <body>
@@ -731,13 +732,13 @@ iframe {
   <header>
     <div class="container nav">
       <a class="brand" href="../" aria-label="INMED Educación Médica">
-        <img src="../img/logo-inmed.png" alt="InMed Educación Médica" class="brand-logo">
+        <img src="../img/logo-inmed.webp" alt="InMed Educación Médica" class="brand-logo">
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
         <a href="../">Inicio</a>
         <a href="./">Blog</a>
         <a href="../#incluye">Qué incluye</a>
-        <a href="../#pedido">Reservar</a>
+        <a data-track="blog_to_product" href="../#pedido">Reservar</a>
       </nav>
       <a class="btn btn-primary" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20kit%20de%20sutura" target="_blank" rel="noopener">WhatsApp</a>
     </div>
@@ -751,7 +752,7 @@ iframe {
         <p>Conocer los principales tipos de sutura ayuda a entender cómo se aproximan los tejidos, qué función cumple cada técnica y por qué la práctica repetida es clave antes de llegar a un entorno clínico real.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#articulo">Leer guía</a>
-          <a class="btn btn-secondary" href="../#pedido">Ver Kit de Sutura</a>
+          <a class="btn btn-secondary" data-track="blog_to_product" href="../#pedido">Ver Kit de Sutura</a>
         </div>
       </div>
       <aside class="hero-card" aria-label="Kit de sutura para práctica">
@@ -795,7 +796,7 @@ iframe {
           <ul><li>Entrada perpendicular de la aguja en la piel o pad de sutura.</li><li>Distancia similar entre el borde de la herida y cada lado del punto.</li><li>Profundidad adecuada del trayecto.</li><li>Nudo firme, pero sin estrangular el tejido.</li><li>Eversión suave de los bordes cuando el objetivo es cierre cutáneo.</li></ul>
           <p>En entrenamiento, el punto simple permite observar rápidamente errores comunes: puntos demasiado cercanos al borde, mala alineación, tensión excesiva, nudos voluminosos o trayectos asimétricos.</p>
 
-          <div class="cta-inline"><h2>¿Quieres practicar punto simple, nudos y manejo de instrumental?</h2><p>Conoce el Kit de Sutura InMed para entrenamiento con piel simuladora, hilos e instrumental básico.</p><a class="btn btn-secondary" href="../#pedido">Reservar mi Kit</a></div>
+          <div class="cta-inline"><h2>¿Quieres practicar punto simple, nudos y manejo de instrumental?</h2><p>Conoce el Kit de Sutura InMed para entrenamiento con piel simuladora, hilos e instrumental básico.</p><a class="btn btn-secondary" data-track="blog_to_product" href="../#pedido">Reservar mi Kit</a></div>
 
           <h2 id="sutura-continua">Sutura continua</h2>
           <p>La <strong>sutura continua</strong>, también llamada sutura corrida en algunos contextos, utiliza un mismo hilo que avanza de forma repetida a lo largo de la herida. A diferencia del punto simple, no se anuda cada punto de manera individual, sino que la técnica progresa de un extremo a otro.</p>
@@ -844,7 +845,7 @@ iframe {
             <details><summary>¿Un kit de sutura sirve para estudiantes de Medicina?</summary><p>Sí. Un kit de sutura permite practicar técnica manual, punto simple, sutura continua, nudos básicos y manejo de instrumental antes de prácticas supervisadas.</p></details>
           </div>
 
-          <div class="cta-inline"><h2>Comienza a practicar con materiales adecuados</h2><p>El Kit de Sutura InMed está pensado para estudiantes y profesionales que quieren entrenar técnica manual, nudos y puntos básicos con piel simuladora e instrumental de práctica.</p><a class="btn btn-secondary" href="../#pedido">Ver Kit de Sutura</a></div>
+          <div class="cta-inline"><h2>Comienza a practicar con materiales adecuados</h2><p>El Kit de Sutura InMed está pensado para estudiantes y profesionales que quieren entrenar técnica manual, nudos y puntos básicos con piel simuladora e instrumental de práctica.</p><a class="btn btn-secondary" data-track="blog_to_product" href="../#pedido">Ver Kit de Sutura</a></div>
 
           <h2 id="referencias">Referencias médicas y recursos consultados</h2>
           <p>Este artículo fue redactado con fines educativos a partir de conceptos generales de técnica quirúrgica básica, cierre de heridas, entrenamiento de sutura y seguridad quirúrgica. No sustituye la formación práctica supervisada ni las guías institucionales.</p>
@@ -863,6 +864,6 @@ iframe {
     </article>
   </main>
 
-  <footer><div class="container footer-grid"><div><strong>INMED · Educación Médica</strong><br><small>Blog de sutura, instrumental médico y habilidades clínicas</small></div><div><a href="../">Inicio</a> · <a href="./">Blog</a> · <a href="https://www.instagram.com/in_medpy/" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/595991950031" target="_blank" rel="noopener">WhatsApp</a></div></div></footer>
+  <footer><div class="container footer-grid"><div><strong>INMED · Educación Médica</strong><br><small>Blog de sutura, instrumental médico y habilidades clínicas</small></div><div><a href="../">Inicio</a> · <a href="./">Blog</a> · <a href="https://www.instagram.com/in_medpy/" target="_blank" rel="noopener">Instagram</a> · <a data-track="blog_whatsapp" data-wa="true" data-wa-source="blog" href="https://wa.me/595991950031" target="_blank" rel="noopener">WhatsApp</a></div></div></footer>
 </body>
 </html>

@@ -737,6 +737,7 @@ iframe {
 }
 
 </style>
+<script defer src="../site-analytics.js"></script>
 </head>
 
 <body>
@@ -744,13 +745,13 @@ iframe {
   <header>
     <div class="container nav">
       <a class="brand" href="../" aria-label="INMED Educación Médica">
-        <img src="../img/logo-inmed.png" alt="InMed Educación Médica" class="brand-logo">
+        <img src="../img/logo-inmed.webp" alt="InMed Educación Médica" class="brand-logo">
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
         <a href="../">Inicio</a>
         <a href="./">Blog</a>
         <a href="../#incluye">Qué incluye</a>
-        <a href="../#pedido">Reservar</a>
+        <a data-track="blog_to_product" href="../#pedido">Reservar</a>
       </nav>
       <a class="btn btn-primary" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20kit%20de%20sutura" target="_blank" rel="noopener">WhatsApp</a>
     </div>
@@ -764,7 +765,7 @@ iframe {
         <p>El hilo de sutura es uno de los materiales más importantes en el cierre de tejidos y en el entrenamiento de habilidades clínicas. Comprender sus tipos, características y comportamiento ayuda a practicar con más criterio.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#articulo">Leer guía</a>
-          <a class="btn btn-secondary" href="../#pedido">Ver Kit de Sutura</a>
+          <a class="btn btn-secondary" data-track="blog_to_product" href="../#pedido">Ver Kit de Sutura</a>
         </div>
       </div>
       <aside class="hero-card" aria-label="Kit de sutura para práctica">
@@ -821,7 +822,7 @@ iframe {
           <p>Para práctica educativa, los hilos no absorbibles como nylon o seda de entrenamiento son comunes porque permiten visualizar el punto, practicar nudos y repetir técnicas sobre piel sintética o pad de sutura.</p>
           <div class="warning"><strong>Precaución:</strong> los hilos incluidos en kits de entrenamiento están destinados a práctica educativa. No deben usarse en pacientes salvo que sean materiales clínicos certificados y el procedimiento se realice en contexto autorizado.</div>
 
-          <div class="cta-inline"><h2>¿Quieres practicar con hilos de sutura e instrumental?</h2><p>El Kit de Sutura InMed incluye materiales orientados al entrenamiento de puntos, nudos y coordinación manual.</p><a class="btn btn-secondary" href="../#pedido">Reservar mi Kit</a></div>
+          <div class="cta-inline"><h2>¿Quieres practicar con hilos de sutura e instrumental?</h2><p>El Kit de Sutura InMed incluye materiales orientados al entrenamiento de puntos, nudos y coordinación manual.</p><a class="btn btn-secondary" data-track="blog_to_product" href="../#pedido">Reservar mi Kit</a></div>
 
           <h2 id="mono-multi">Monofilamento vs multifilamento</h2>
           <p>Otra clasificación fundamental es la estructura del hilo. Un <strong>monofilamento</strong> está formado por una sola hebra. Un <strong>multifilamento</strong> está formado por varias fibras, generalmente trenzadas o agrupadas.</p>
@@ -853,7 +854,7 @@ iframe {
             <details><summary>¿El hilo de práctica se puede usar en pacientes?</summary><p>No. Los hilos de entrenamiento deben usarse solo para práctica educativa, salvo que el material esté certificado para uso clínico y el procedimiento se realice bajo supervisión profesional.</p></details>
           </div>
 
-          <div class="cta-inline"><h2>Practica sutura con materiales organizados</h2><p>Conoce el Kit de Sutura InMed para estudiantes, con piel simuladora, instrumental y hilos para entrenamiento.</p><a class="btn btn-secondary" href="../#pedido">Ver Kit de Sutura</a></div>
+          <div class="cta-inline"><h2>Practica sutura con materiales organizados</h2><p>Conoce el Kit de Sutura InMed para estudiantes, con piel simuladora, instrumental y hilos para entrenamiento.</p><a class="btn btn-secondary" data-track="blog_to_product" href="../#pedido">Ver Kit de Sutura</a></div>
 
           <h2 id="referencias">Referencias médicas y recursos consultados</h2>
           <p>Este artículo fue redactado con fines educativos a partir de conceptos generales de materiales de sutura, cierre de heridas y entrenamiento clínico. No sustituye la formación práctica supervisada ni las guías institucionales.</p>
@@ -872,6 +873,6 @@ iframe {
     </article>
   </main>
 
-  <footer><div class="container footer-grid"><div><strong>INMED · Educación Médica</strong><br><small>Blog de sutura, instrumental médico y habilidades clínicas</small></div><div><a href="../">Inicio</a> · <a href="./">Blog</a> · <a href="https://www.instagram.com/in_medpy/" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/595991950031" target="_blank" rel="noopener">WhatsApp</a></div></div></footer>
+  <footer><div class="container footer-grid"><div><strong>INMED · Educación Médica</strong><br><small>Blog de sutura, instrumental médico y habilidades clínicas</small></div><div><a href="../">Inicio</a> · <a href="./">Blog</a> · <a href="https://www.instagram.com/in_medpy/" target="_blank" rel="noopener">Instagram</a> · <a data-track="blog_whatsapp" data-wa="true" data-wa-source="blog" href="https://wa.me/595991950031" target="_blank" rel="noopener">WhatsApp</a></div></div></footer>
 </body>
 </html>
