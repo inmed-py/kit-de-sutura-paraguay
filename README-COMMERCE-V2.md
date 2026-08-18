@@ -18,3 +18,19 @@ Sitio estático HTML/CSS/JS listo para GitHub Pages.
 `site-analytics.js` registra eventos en `window.dataLayer` y los reenvía a `gtag` si GA4/GTM se añade después. No requiere dependencias y no envía datos a terceros por sí solo.
 
 Eventos principales: `page_view_custom`, `whatsapp_click`, `cta_click`, `generate_lead`, `scroll_depth`, `video_start`, `video_complete`.
+
+
+## Google Analytics 4
+
+GA4 instalado em todas as páginas HTML com Measurement ID `G-3YWWXYW6LT`.
+
+Eventos enviados pelo `site-analytics.js`:
+- `page_view_custom`
+- `whatsapp_click` com `cta_source`
+- `cta_click`
+- `generate_lead` em envio de formulário
+- `scroll_depth` (25/50/75/90)
+- `video_start`
+- `video_complete`
+
+UTMs (`utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`) e a landing page original são preservadas durante a sessão e anexadas aos eventos.

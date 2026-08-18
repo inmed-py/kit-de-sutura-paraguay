@@ -18,9 +18,21 @@
     return current;
   }
   function track(event,params){
-    const payload=Object.assign({event:event,page_path:location.pathname,page_title:document.title},params||{});
+    const attr=readAttribution();
+    const enriched=Object.assign({
+      page_path:location.pathname,
+      page_title:document.title,
+      utm_source:attr.utm_source||'',
+      utm_medium:attr.utm_medium||'',
+      utm_campaign:attr.utm_campaign||'',
+      utm_content:attr.utm_content||'',
+      utm_term:attr.utm_term||'',
+      landing_page:attr.landing_page||'',
+      original_referrer:attr.referrer||''
+    },params||{});
+    const payload=Object.assign({event:event},enriched);
     window.dataLayer.push(payload);
-    if(typeof window.gtag==='function') window.gtag('event',event,params||{});
+    if(typeof window.gtag==='function') window.gtag('event',event,enriched);
     document.dispatchEvent(new CustomEvent('inmed:track',{detail:payload}));
   }
   function enrichWhatsApp(link){
@@ -42,9 +54,15 @@
     const label=link.dataset.track;
     if(link.matches('[data-wa="true"]')){
       enrichWhatsApp(link);
-      track('whatsapp_click',{cta:link.dataset.waSource||label||'unknown',link_text:(link.textContent||'').trim().slice(0,80)});
+      track('whatsapp_click',{cta_source:link.dataset.waSource||label||'unknown',link_text:(link.textContent||'').trim().slice(0,80)});
     } else if(label){ track('cta_click',{cta:label,link_text:(link.textContent||'').trim().slice(0,80)}); }
   },true);
+
+  document.querySelectorAll('form').forEach(function(form){
+    form.addEventListener('submit',function(){
+      track('generate_lead',{form_id:form.id||'lead_form',lead_type:'whatsapp'});
+    });
+  });
 
   const marks=new Set();
   addEventListener('scroll',function(){
