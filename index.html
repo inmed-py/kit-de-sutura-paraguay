@@ -3,10 +3,12 @@
 <html lang="es-PY">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <title>Kit de Sutura en Paraguay | 25 Piezas + Piel 3 Capas | InMed</title>
 <meta content="Kit de Sutura InMed en Paraguay: 25 piezas, piel 3 capas, instrumental, hilos nylon y seda. Promo Gs. 239.000. Envíos a Paraguay y retiro en Asunción." name="description"/>
 <meta content="#f7f3ec" name="theme-color"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="light" name="color-scheme"/>
 <meta content="kit de sutura Paraguay, kit de sutura en Paraguay, comprar kit de sutura Paraguay, kit de sutura con piel, piel simuladora para sutura, práctica de sutura educativa, instrumental de sutura, hilos de sutura" name="keywords"/>
 <meta content="index, follow, max-image-preview:large" name="robots"/>
 <meta content="INMED Educación Médica" name="author"/>
@@ -443,16 +445,8 @@
 
 
     /* Partículas animadas no fundo, como no blog, sem biblioteca externa */
-    #particles-js{
-      position:fixed;
-      inset:0;
-      z-index:0;
-      pointer-events:none;
-      opacity:.58;
-    }
     header,main,footer{position:relative;z-index:2}
     .progress,.float-whatsapp,.back-top{z-index:120}
-    @media(max-width:720px){#particles-js{opacity:.58}}
 
 
     /* Depoimentos: autoplay garantido também no celular */
@@ -475,12 +469,10 @@
     main,section,header,footer,.container,.nav-shell,.product-showcase,.pricing-cards,.testimonial-strip{max-width:100%}
     .nav-shell{width:min(1180px,calc(100% - 16px))}
     img,video,canvas,svg{max-width:100%}
-    #particles-js{width:100vw!important;height:100dvh!important;display:block;mix-blend-mode:multiply}
     .testimonial-strip{max-width:100vw;contain:paint;overflow:hidden!important}
     .testimonial-track{display:flex!important;flex-wrap:nowrap!important;will-change:transform;transform:translate3d(0,0,0)}
     .testimonial{flex:0 0 auto!important}
     @media(max-width:720px){
-      #particles-js{opacity:.78!important}
       .hero .container::before{opacity:.95!important;filter:none!important;background:linear-gradient(90deg,rgba(232,64,40,.16),rgba(240,104,80,.14),rgba(0,200,96,.10))!important}
       .hero .container::after{opacity:.72!important}
       .hero h1::before{opacity:.95!important;background:linear-gradient(90deg,rgba(232,64,40,.22),rgba(240,104,80,.18),rgba(212,136,42,.16))!important}
@@ -512,21 +504,69 @@
     @media(max-width:720px){
       .video-demo-card{border-radius:24px}
     }
+
+
+    /* ===== InMed Commerce v2 — conversión, mobile y confianza ===== */
+    h1{font-size:clamp(2.8rem,6.2vw,6.2rem);line-height:.92;letter-spacing:-.075em}
+    .btn::after,.media-stage::after{display:none!important}
+    .hero{padding-top:68px}
+    .hero .lead{max-width:760px}
+    .hero-offer-line{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin:16px auto 6px;color:var(--muted);font-weight:780;font-size:.94rem}
+    .hero-offer-line b{color:var(--ink)}
+    .trust-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;width:min(920px,100%);margin:22px auto 8px}
+    .trust-item{background:rgba(255,252,247,.9);border:1px solid rgba(0,0,0,.07);border-radius:18px;padding:13px 12px;display:flex;align-items:center;justify-content:center;gap:9px;box-shadow:0 9px 24px rgba(80,40,20,.04);font-size:.88rem;font-weight:850;color:var(--ink-2)}
+    .trust-item span{font-size:1.1rem}
+    .summary-actions{display:grid;gap:10px}
+    .summary-actions .btn{width:100%}
+    .bulk-link{font-size:.9rem;text-align:center;color:var(--purple);font-weight:900;text-decoration:underline;text-underline-offset:3px}
+    .buy-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+    .buy-step{background:var(--bg-card);border:1px solid var(--border-card);border-radius:24px;padding:22px;box-shadow:var(--shadow-2);text-align:left;position:relative}
+    .buy-step-num{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;background:var(--purple);color:#fff;font-weight:950;margin-bottom:14px;box-shadow:0 10px 24px rgba(232,64,40,.18)}
+    .buy-step p{margin:0}
+    .proof-note{display:inline-flex;align-items:center;gap:8px;padding:9px 12px;border-radius:999px;background:rgba(0,200,96,.08);border:1px solid rgba(0,200,96,.12);font-size:.84rem;font-weight:850;color:#087f43;margin-top:12px}
+    .bulk-hint{display:none;margin:-4px 0 14px;padding:12px 14px;border-radius:16px;background:rgba(232,64,40,.06);border:1px solid rgba(232,64,40,.13);color:var(--ink-2);font-weight:800;font-size:.9rem}
+    .bulk-hint.show{display:block}
+    .mobile-buybar{display:none}
+    .cta-microcopy{margin-top:9px!important;text-align:center;font-size:.82rem;color:var(--soft)}
+    .faq-intro-links{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:18px auto 6px}
+    .faq-intro-links a{padding:8px 11px;border-radius:999px;background:#fff;border:1px solid rgba(0,0,0,.07);font-size:.82rem;font-weight:850;color:var(--muted)}
+    .attribution-status{display:none}
+
+    @media(max-width:720px){
+      body{padding-bottom:78px}
+      h1{font-size:clamp(2.55rem,13.5vw,4.35rem);letter-spacing:-.065em}
+      .hero{padding-top:44px}
+      .hero-badges{gap:7px}.pill{padding:8px 10px;font-size:.8rem}
+      .toggle-like{width:100%;overflow-x:auto;justify-content:flex-start}.toggle-like span{white-space:nowrap}
+      .trust-row{grid-template-columns:repeat(2,1fr);gap:8px;margin-top:18px}
+      .trust-item{justify-content:flex-start;padding:11px 10px;font-size:.8rem}
+      .buy-steps{grid-template-columns:1fr}
+      .float-whatsapp{display:none}
+      .back-top{bottom:92px}
+      .mobile-buybar{position:fixed;left:0;right:0;bottom:0;z-index:130;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px max(12px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));background:rgba(255,252,247,.96);backdrop-filter:blur(18px);border-top:1px solid rgba(0,0,0,.08);box-shadow:0 -12px 35px rgba(80,40,20,.10)}
+      .mobile-buybar .mobile-price{display:grid;line-height:1.05;min-width:0}.mobile-buybar .mobile-price small{font-size:.7rem;color:var(--soft);font-weight:800}.mobile-buybar .mobile-price strong{font-size:1.06rem;color:var(--ink);white-space:nowrap}.mobile-buybar .btn{min-height:46px;padding:0 15px;font-size:.88rem;box-shadow:none}
+    }
+
   </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Product",
   "@id": "https://inmed-py.github.io/kit-de-sutura-paraguay/#product",
-  "name": "Kit de Sutura Premium de 25 Piezas (Piel 3 Capas + Instrumental)",
+  "name": "Kit de Sutura InMed de 25 Piezas",
   "description": "Kit de sutura educativo de 25 piezas para estudiantes y profesionales de medicina, odontología, enfermería y veterinaria, con piel simuladora de 3 capas, instrumental de práctica, hilos de sutura y envíos a todo Paraguay.",
   "brand": {
     "@type": "Brand",
     "name": "INMED Educación Médica"
   },
   "sku": "KIT-SUTURA-25PZ-PY",
-  "mpn": "KIT-SUTURA-25PZ",
   "category": "Instrumental médico educativo",
+  "audience": {"@type":"PeopleAudience","audienceType":"Estudiantes de Medicina, Odontología, Enfermería y Veterinaria"},
+  "additionalProperty": [
+    {"@type":"PropertyValue","name":"Cantidad de piezas","value":"25"},
+    {"@type":"PropertyValue","name":"Piel simuladora","value":"3 capas"},
+    {"@type":"PropertyValue","name":"Hilos incluidos","value":"12"}
+  ],
   "image": [
     "https://inmed-py.github.io/kit-de-sutura-paraguay/img/kit-de-sutura-paraguay-1.webp",
     "https://inmed-py.github.io/kit-de-sutura-paraguay/img/kit-de-sutura-paraguay-2.webp",
@@ -539,89 +579,17 @@
     "url": "https://inmed-py.github.io/kit-de-sutura-paraguay/",
     "priceCurrency": "PYG",
     "price": "239000",
-    "priceValidUntil": "2026-12-31",
     "availability": "https://schema.org/InStock",
     "itemCondition": "https://schema.org/NewCondition",
-    "validFrom": "2026-06-01T00:00:00-04:00",
     "seller": {
       "@type": "Organization",
       "name": "INMED Educación Médica"
-    },
-    "shippingDetails": {
-      "@type": "OfferShippingDetails",
-      "shippingDestination": {
-        "@type": "DefinedRegion",
-        "addressCountry": "PY"
-      },
-      "shippingLabel": "Costo y plazo de envío se confirman por WhatsApp. Retiro en Asunción según disponibilidad.",
-      "deliveryTime": {
-        "@type": "ShippingDeliveryTime",
-        "handlingTime": {
-          "@type": "QuantitativeValue",
-          "minValue": 0,
-          "maxValue": 2,
-          "unitCode": "DAY"
-        },
-        "transitTime": {
-          "@type": "QuantitativeValue",
-          "minValue": 1,
-          "maxValue": 7,
-          "unitCode": "DAY"
-        }
-      }
-    },
-    "hasMerchantReturnPolicy": {
-      "@type": "MerchantReturnPolicy",
-      "applicableCountry": "PY",
-      "merchantReturnDays": 7,
-      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-      "returnMethod": "https://schema.org/ReturnByMail",
-      "returnFees": "https://schema.org/ReturnShippingFees"
     },
     "availableDeliveryMethod": [
       "https://schema.org/ParcelService",
       "https://schema.org/OnSitePickup"
     ]
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "203",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Jéssica M."
-      },
-      "datePublished": "2026-05-12",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "Compré 8 kits para mi grupo de prácticas. La calidad del instrumental es premium y los estuches llegaron impecables."
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Camila G."
-      },
-      "datePublished": "2026-05-28",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "El kit es completísimo para talleres de técnica quirúrgica. La piel simuladora de 3 capas permite entrenar con seguridad."
-    }
-  ]
+  }
 }
   </script>
 <script type="application/ld+json">
@@ -668,6 +636,21 @@
         "@type": "Answer",
         "text": "Sí, puede coordinarse retiro en Asunción según disponibilidad."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué incluye exactamente el kit de 25 piezas?",
+      "acceptedAnswer": {"@type":"Answer","text":"Incluye piel simuladora de 3 capas, estuche, tijera Iris, porta agujas Mayo-Hegar, cabo de bisturí, pinzas, láminas de entrenamiento y 12 hilos de sutura entre nylon y seda."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es un buen kit para empezar a practicar sutura?",
+      "acceptedAnswer": {"@type":"Answer","text":"Para comenzar conviene un kit organizado que reúna piel simuladora, porta agujas, pinzas, tijera e hilos de práctica para entrenar manejo de instrumental, punto simple y nudos."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hay precio mayorista?",
+      "acceptedAnswer": {"@type":"Answer","text":"Sí, las compras por cantidad pueden tener condiciones mayoristas. La cantidad, disponibilidad y precio aplicable se confirman directamente por WhatsApp."}
     }
   ]
 }
@@ -761,7 +744,6 @@
   </script><link href="https://inmed-py.github.io/kit-de-sutura-paraguay/img/kit-de-sutura-paraguay-1.webp" rel="image_src"/><link href="https://inmed-py.github.io/kit-de-sutura-paraguay/manifest.webmanifest" rel="manifest"/><link href="https://inmed-py.github.io/kit-de-sutura-paraguay/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/></head>
 <body>
 <div aria-hidden="true" class="progress"></div>
-<canvas aria-hidden="true" id="particles-js"></canvas>
 <header class="site-header">
 <div class="nav-shell">
 <a aria-label="InMed Educación Médica" class="brand" href="#inicio">
@@ -777,8 +759,8 @@
 <a href="#faq">FAQ</a>
 </nav>
 <div class="nav-actions">
-<a class="btn" href="https://www.instagram.com/in_medpy/" rel="noopener" target="_blank">Instagram</a>
-<a class="btn btn-primary" data-wa="true" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20kit%20de%20sutura">WhatsApp</a>
+<a class="btn" data-track="instagram_header" href="https://www.instagram.com/in_medpy/" rel="noopener" target="_blank">Instagram</a>
+<a class="btn btn-primary" data-track="whatsapp_header" data-wa="true" data-wa-source="header" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20comprar%20el%20Kit%20de%20Sutura%20InMed%20de%2025%20piezas">Comprar</a>
 </div>
 </div>
 </header>
@@ -788,16 +770,22 @@
 <span class="decor-sparkle s1" aria-hidden="true"></span><span class="decor-sparkle s2" aria-hidden="true"></span><span class="decor-sparkle s3" aria-hidden="true"></span>
 <div class="hero-badges" data-reveal="">
 <span class="pill"><strong>Promo:</strong> Gs. 239.000</span>
-<span class="pill"><span class="stars">★★★★★</span> 4.9 / 5</span>
-<span class="pill">+200 kits vendidos</span>
+<span class="pill">25 piezas completas</span>
+<span class="pill">Envíos a Paraguay</span>
 </div>
-<div class="eyebrow center" data-reveal="" style="--delay:80ms">Kit de entrenamiento médico en Paraguay</div>
-<h1 class="center" data-reveal="" style="--delay:140ms">Kit de Sutura <span class="gradient-text">Premium</span> de 25 Piezas</h1>
-<p class="lead center" data-reveal="" style="--delay:210ms">Piel simuladora de 3 capas, instrumental de acero inoxidable, hilos nylon y seda, estuche y materiales. <strong>Disponible en Paraguay</strong> con retiro en Asunción y envíos según ciudad.</p>
-<div class="toggle-like" data-reveal="" style="--delay:280ms"><span class="active">Oferta actual</span><span>Retiro en Asunción</span><span>Envíos a Paraguay</span></div>
-<div class="hero-actions" data-reveal="" style="--delay:350ms">
-<a class="btn btn-primary" data-wa="true" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20consultar%20disponibilidad%20del%20kit%20de%20sutura">📲 Consultar disponibilidad</a>
-<a class="btn btn-purple" href="#incluye">Ver las 25 piezas</a>
+<div class="eyebrow center" data-reveal="" style="--delay:80ms">Entrenamiento de sutura · InMed Paraguay</div>
+<h1 class="center" data-reveal="" style="--delay:140ms">Kit de Sutura InMed <span class="gradient-text">25 Piezas</span></h1>
+<p class="lead center" data-reveal="" style="--delay:210ms">Piel simuladora de 3 capas, 12 hilos, instrumental y estuche para practicar técnica de sutura con un kit completo y organizado.</p>
+<div class="hero-offer-line" data-reveal="" style="--delay:250ms"><span><del>Gs. 260.000</del></span><b>Gs. 239.000</b><span>· retiro en Asunción o envío según ciudad</span></div>
+<div class="hero-actions" data-reveal="" style="--delay:300ms">
+<a class="btn btn-primary" data-track="whatsapp_hero" data-wa="true" data-wa-source="hero" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20comprar%20el%20Kit%20de%20Sutura%20de%2025%20piezas%20por%20Gs.%20239.000">📲 Comprar por WhatsApp — Gs. 239.000</a>
+<a class="btn btn-purple" data-track="view_contents_hero" href="#incluye">Ver qué incluye</a>
+</div>
+<div class="trust-row" data-reveal="" style="--delay:350ms">
+<div class="trust-item"><span>🧵</span>12 hilos incluidos</div>
+<div class="trust-item"><span>🩺</span>Piel de 3 capas</div>
+<div class="trust-item"><span>📦</span>Envíos a Paraguay</div>
+<div class="trust-item"><span>👥</span>Precio mayorista</div>
 </div>
 <div class="product-showcase" data-reveal="" style="--delay:430ms">
 <div class="media-card">
@@ -830,7 +818,11 @@
 <li>Envíos a todo Paraguay</li>
 </ul>
 </div>
-<a class="btn btn-primary" data-wa="true" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20kit%20de%20sutura">Consultar por WhatsApp</a>
+<div class="summary-actions">
+<a class="btn btn-primary" data-track="whatsapp_product_card" data-wa="true" data-wa-source="product_card" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20comprar%20el%20Kit%20de%20Sutura%20de%2025%20piezas%20por%20Gs.%20239.000">Quiero mi kit — Gs. 239.000</a>
+<a class="bulk-link" data-track="whatsapp_wholesale_card" data-wa="true" data-wa-source="mayorista" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20consultar%20precio%20mayorista%20del%20Kit%20de%20Sutura">¿Comprás para un grupo? Pedí precio mayorista</a>
+<p class="cta-microcopy">Stock, entrega y precio final se confirman antes de cerrar el pedido.</p>
+</div>
 </aside>
 </div>
 </div>
@@ -859,7 +851,7 @@
 <div class="divider"></div>
 <p>Precio promocional hasta agotar stock. Atención directa por WhatsApp.</p>
 <ul class="feature-list"><li>Precio anterior Gs. 260.000</li><li>Compra por cantidad bajo pedido</li><li>Confirmación de stock</li><li>Atención personalizada</li><li>Más de 200 kits vendidos</li></ul>
-<a class="btn btn-primary" data-wa="true" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20consultar%20disponibilidad%20del%20kit%20de%20sutura">Consultar disponibilidad</a>
+<a class="btn btn-primary" data-track="whatsapp_offer_card" data-wa="true" data-wa-source="offer_card" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20comprar%20el%20Kit%20de%20Sutura%20de%2025%20piezas">Comprar por WhatsApp</a>
 </article>
 <article class="plan-card delivery-card" data-reveal="" style="--delay:180ms">
 <span class="card-kicker blue">Entrega</span>
@@ -879,9 +871,24 @@
 <span>💬</span>
 <p>Te confirmamos por WhatsApp el plazo estimado, el punto de entrega y si aplica precio mayorista por cantidad.</p>
 </div>
-<a class="btn" data-wa="true" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20coordinar%20la%20entrega%20del%20kit%20de%20sutura">Coordinar por WhatsApp</a>
+<a class="btn" data-track="whatsapp_delivery" data-wa="true" data-wa-source="delivery" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20coordinar%20la%20entrega%20del%20Kit%20de%20Sutura">Coordinar entrega</a>
 </article>
 </div>
+</div>
+</section>
+<section class="section compact" id="como-comprar">
+<div class="container">
+<div class="center" data-reveal="">
+<div class="eyebrow center">Cómo comprar</div>
+<h2>Tres pasos. Sin checkout complicado.</h2>
+<p class="lead center">La compra se coordina directamente con InMed para confirmar stock, entrega y condiciones antes de pagar.</p>
+</div>
+<div class="buy-steps">
+<article class="buy-step" data-reveal=""><div class="buy-step-num">1</div><h3>Escribinos</h3><p>Elegí tu kit o indicá cuántas unidades necesitás. El WhatsApp ya abre con el producto identificado.</p></article>
+<article class="buy-step" data-reveal="" style="--delay:80ms"><div class="buy-step-num">2</div><h3>Confirmamos</h3><p>Verificamos disponibilidad, precio aplicable y retiro en Asunción o envío a tu ciudad.</p></article>
+<article class="buy-step" data-reveal="" style="--delay:160ms"><div class="buy-step-num">3</div><h3>Coordinamos</h3><p>Definís la entrega directamente con InMed. Para grupos, consultá condiciones mayoristas.</p></article>
+</div>
+<div class="center" data-reveal=""><span class="proof-note">✓ Atención directa antes de cerrar el pedido</span></div>
 </div>
 </section>
 <section class="section compact local-availability" id="disponible-paraguay">
@@ -948,7 +955,7 @@
 <div class="video-demo-card">
 <video class="video-demo-player" id="demoVideo" controls="" playsinline="" muted="" loop="" poster="https://inmed-py.github.io/kit-de-sutura-paraguay/img/kit-de-sutura-paraguay-1.webp" preload="metadata">
 <source src="https://inmed-py.github.io/kit-de-sutura-paraguay/video/sutura-demo.mp4" type="video/mp4"/>
-<track kind="captions" label="Español" src="https://inmed-py.github.io/kit-de-sutura-paraguay/video/sutura-demo.vtt" srclang="es"/>
+<track kind="captions" label="Español" src="https://inmed-py.github.io/kit-de-sutura-paraguay/video/kit-de-sutura-inmed.vtt" srclang="es"/>
 Tu navegador no soporta video HTML5. <a href="https://inmed-py.github.io/kit-de-sutura-paraguay/video/sutura-demo.mp4">Descargar video</a>
 </video>
 </div>
@@ -979,7 +986,7 @@ Tu navegador no soporta video HTML5. <a href="https://inmed-py.github.io/kit-de-
 <section class="section compact" id="testimonios">
 <div class="container center" data-reveal="">
 <div class="eyebrow center">Opiniones</div>
-<h2>Lo que dicen estudiantes.</h2>
+<h2>Experiencias compartidas por compradores.</h2>
 </div>
 <div class="testimonial-strip" data-reveal="">
 <div class="testimonial-track">
@@ -1002,27 +1009,31 @@ Tu navegador no soporta video HTML5. <a href="https://inmed-py.github.io/kit-de-
 </div>
 <form class="form-card" data-reveal="" id="orderForm" style="--delay:120ms">
 <div class="fields">
-<div class="field"><label for="nombre">Nombre</label><input id="nombre" placeholder="Ej.: María González" required="" type="text"/></div>
-<div class="field"><label for="telefono">Teléfono</label><input id="telefono" placeholder="Ej.: 0981 123 456" required="" type="tel"/></div>
-<div class="field"><label for="cantidad">Cantidad</label><input id="cantidad" min="1" required="" type="number" value="1"/></div>
-<div class="field"><label for="entrega">Forma de entrega</label><select id="entrega" required=""><option value="">Seleccionar</option><option>Envío</option><option>Retiro</option></select></div>
-<div class="field full"><label for="ubicacion">Ubicación</label><input id="ubicacion" placeholder="Ciudad, barrio o referencia" type="text"/></div>
-<div class="field full"><label for="observacion">Observación opcional</label><textarea id="observacion" placeholder="Ej.: Quiero confirmar la promo o consultar precio mayorista."></textarea></div>
+<div class="field"><label for="nombre">Nombre</label><input autocomplete="name" id="nombre" name="nombre" placeholder="Ej.: María González" required="" type="text"/></div>
+<div class="field"><label for="telefono">Teléfono</label><input autocomplete="tel" id="telefono" inputmode="tel" name="telefono" placeholder="Ej.: 0981 123 456" required="" type="tel"/></div>
+<div class="field"><label for="cantidad">Cantidad</label><input id="cantidad" inputmode="numeric" min="1" name="cantidad" required="" type="number" value="1"/></div>
+<div class="field"><label for="entrega">Forma de entrega</label><select id="entrega" name="entrega" required=""><option value="">Seleccionar</option><option>Envío</option><option>Retiro</option></select></div>
+<div class="field full"><label for="ubicacion">Ubicación</label><input autocomplete="address-level2" id="ubicacion" name="ubicacion" placeholder="Ciudad, barrio o referencia" type="text"/></div>
+<div class="field full"><label for="observacion">Observación opcional</label><textarea id="observacion" name="observacion" placeholder="Ej.: Quiero confirmar la promo o consultar precio mayorista."></textarea></div>
 </div>
+<div class="bulk-hint" id="bulkHint">Comprás varias unidades: vamos a identificar tu consulta como <strong>mayorista</strong> en WhatsApp.</div>
 <p class="small">Al enviar, se abrirá WhatsApp. El pedido se confirma después de verificar disponibilidad y entrega.</p>
-<button class="btn btn-primary" style="width:100%" type="submit">Consultar por WhatsApp</button>
+<button class="btn btn-primary" data-track="form_submit" style="width:100%" type="submit">Continuar en WhatsApp</button>
 </form>
 </div>
 </section>
 <section class="section compact" id="faq">
 <div class="container">
-<div class="center" data-reveal=""><div class="eyebrow center">FAQ</div><h2>Preguntas frecuentes.</h2></div>
+<div class="center" data-reveal=""><div class="eyebrow center">FAQ</div><h2>Preguntas frecuentes.</h2><p class="lead center">Respuestas directas sobre contenido, práctica, compra y entrega.</p><div class="faq-intro-links"><a href="#incluye">Qué incluye</a><a href="#como-comprar">Cómo comprar</a><a href="#comparativa">Comparar kits</a><a href="blog/">Guías de sutura</a></div></div>
 <div class="faq" data-reveal="">
 <details open=""><summary>¿Dónde comprar kit de sutura en Paraguay?</summary><div class="answer">Podés comprar el kit de sutura InMed en Paraguay, con piel simuladora de 3 capas, instrumental, hilos nylon y seda, retiro en Asunción y envíos a todo el país según disponibilidad.</div></details>
 <details><summary>¿Cuál es el precio promocional?</summary><div class="answer">El precio promocional actual es Gs. 239.000. Antes estaba Gs. 260.000. La disponibilidad se confirma por WhatsApp.</div></details>
 <details><summary>¿Sirve para estudiantes?</summary><div class="answer">Sí. Está pensado para estudiantes y profesionales de medicina, odontología, enfermería y veterinaria que necesitan practicar técnica básica de sutura.</div></details>
 <details><summary>¿Hacen envíos a todo Paraguay?</summary><div class="answer">Sí. El costo y tiempo de entrega dependen de la ciudad y se confirman al realizar el pedido.</div></details>
 <details><summary>¿Puedo retirar personalmente?</summary><div class="answer">Sí, puede coordinarse retiro en Asunción según disponibilidad.</div></details>
+<details><summary>¿Qué incluye exactamente el kit de 25 piezas?</summary><div class="answer">Incluye piel simuladora de 3 capas, estuche, tijera Iris, porta agujas Mayo-Hegar, cabo de bisturí, pinzas, láminas de entrenamiento y 12 hilos de sutura entre nylon y seda. El detalle completo está en la sección “Qué incluye”.</div></details>
+<details><summary>¿Cuál es un buen kit para empezar a practicar sutura?</summary><div class="answer">Para comenzar conviene un kit organizado que reúna piel simuladora, porta agujas, pinzas, tijera e hilos de práctica. El objetivo es poder entrenar manejo de instrumental, punto simple y nudos sin comprar cada pieza por separado.</div></details>
+<details><summary>¿Hay precio mayorista?</summary><div class="answer">Sí, las compras por cantidad pueden tener condiciones mayoristas. La cantidad, disponibilidad y precio aplicable se confirman directamente por WhatsApp.</div></details>
 </div>
 </div>
 </section>
@@ -1030,16 +1041,21 @@ Tu navegador no soporta video HTML5. <a href="https://inmed-py.github.io/kit-de-
 <div class="container">
 <div class="final-cta center" data-reveal="">
 <div class="eyebrow center">Empezá a practicar</div>
-<h2>Consultá disponibilidad y asegurá la promo.</h2>
-<p class="lead center">Confirmá el precio de Gs. 239.000, las 25 piezas incluidas y la forma de entrega.</p>
-<div class="hero-actions"><a class="btn btn-primary" data-wa="true" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20kit%20de%20sutura">Consultar por WhatsApp</a><a class="btn" href="https://www.instagram.com/in_medpy/" rel="noopener" target="_blank">Visitar Instagram</a></div>
+<h2>Tu kit puede estar a un WhatsApp de distancia.</h2>
+<p class="lead center">Consultá stock, confirmá Gs. 239.000 y coordiná retiro o envío. Si comprás para un grupo, pedí precio mayorista.</p>
+<div class="hero-actions"><a class="btn btn-primary" data-track="whatsapp_final" data-wa="true" data-wa-source="final_cta" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20comprar%20el%20Kit%20de%20Sutura%20de%2025%20piezas%20por%20Gs.%20239.000">Comprar por WhatsApp</a><a class="btn" data-track="instagram_final" href="https://www.instagram.com/in_medpy/" rel="noopener" target="_blank">Ver Instagram</a></div>
 </div>
 </div>
 </section>
 </main>
 <button aria-label="Volver al inicio" class="back-top" type="button"><svg fill="none" viewbox="0 0 24 24"><path d="M12 19V5m0 0-6 6m6-6 6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"></path></svg></button>
-<a aria-label="Abrir WhatsApp" class="float-whatsapp" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20kit%20de%20sutura" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 32 32"><path d="M16.03 3.2c-7.03 0-12.75 5.62-12.75 12.54 0 2.22.6 4.38 1.73 6.27L3.2 28.8l6.98-1.79a12.93 12.93 0 0 0 5.85 1.42c7.03 0 12.75-5.62 12.75-12.54S23.06 3.2 16.03 3.2Zm5.76 15.26c-.32-.16-1.88-.91-2.17-1.02-.29-.1-.5-.16-.72.16-.21.31-.82 1.02-1 1.23-.19.21-.37.24-.69.08-.32-.16-1.35-.49-2.57-1.56-.95-.83-1.59-1.86-1.78-2.17-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.55.16-.18.21-.31.32-.52.1-.21.05-.39-.03-.55-.08-.16-.72-1.7-.98-2.33-.26-.62-.52-.53-.72-.54h-.62c-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.61s1.13 3.03 1.29 3.24c.16.21 2.23 3.35 5.4 4.7.75.32 1.34.51 1.8.65.76.24 1.45.21 2 .13.61-.09 1.88-.76 2.15-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.61-.37Z"></path></svg></a>
+<a aria-label="Abrir WhatsApp" class="float-whatsapp" data-track="whatsapp_float" data-wa="true" data-wa-source="floating" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20comprar%20el%20Kit%20de%20Sutura%20InMed" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 32 32"><path d="M16.03 3.2c-7.03 0-12.75 5.62-12.75 12.54 0 2.22.6 4.38 1.73 6.27L3.2 28.8l6.98-1.79a12.93 12.93 0 0 0 5.85 1.42c7.03 0 12.75-5.62 12.75-12.54S23.06 3.2 16.03 3.2Zm5.76 15.26c-.32-.16-1.88-.91-2.17-1.02-.29-.1-.5-.16-.72.16-.21.31-.82 1.02-1 1.23-.19.21-.37.24-.69.08-.32-.16-1.35-.49-2.57-1.56-.95-.83-1.59-1.86-1.78-2.17-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.55.16-.18.21-.31.32-.52.1-.21.05-.39-.03-.55-.08-.16-.72-1.7-.98-2.33-.26-.62-.52-.53-.72-.54h-.62c-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.61s1.13 3.03 1.29 3.24c.16.21 2.23 3.35 5.4 4.7.75.32 1.34.51 1.8.65.76.24 1.45.21 2 .13.61-.09 1.88-.76 2.15-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.61-.37Z"></path></svg></a>
+<div class="mobile-buybar" aria-label="Compra rápida">
+<div class="mobile-price"><small>Kit InMed · 25 piezas</small><strong>Gs. 239.000</strong></div>
+<a class="btn btn-primary" data-track="whatsapp_mobile_bar" data-wa="true" data-wa-source="mobile_bar" href="https://wa.me/595991950031?text=Hola%20INMED%2C%20quiero%20comprar%20el%20Kit%20de%20Sutura%20de%2025%20piezas%20por%20Gs.%20239.000">Comprar</a>
+</div>
 <footer class="footer"><div class="container"><span>© 2026 INMED Educación Médica.</span><span><a href="https://www.instagram.com/in_medpy/" rel="noopener" target="_blank">@in_medpy</a> · WhatsApp +595 991 950 031</span></div></footer>
+<script defer src="site-analytics.js"></script>
 <script>
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const progress = document.querySelector('.progress');
@@ -1074,7 +1090,15 @@ Tu navegador no soporta video HTML5. <a href="https://inmed-py.github.io/kit-de-
 
     document.querySelector('.back-top').addEventListener('click',()=>document.getElementById('inicio').scrollIntoView({behavior:reduced?'auto':'smooth'}));
 
-    document.getElementById('orderForm').addEventListener('submit', e=>{
+    const orderForm=document.getElementById('orderForm');
+    const qtyInput=document.getElementById('cantidad');
+    const bulkHint=document.getElementById('bulkHint');
+    function updateBulkHint(){
+      const qty=Number(qtyInput?.value||1);
+      bulkHint?.classList.toggle('show', qty>=5);
+    }
+    qtyInput?.addEventListener('input',updateBulkHint); updateBulkHint();
+    orderForm.addEventListener('submit', e=>{
       e.preventDefault();
       const nombre=document.getElementById('nombre').value.trim();
       const telefono=document.getElementById('telefono').value.trim();
@@ -1082,156 +1106,31 @@ Tu navegador no soporta video HTML5. <a href="https://inmed-py.github.io/kit-de-
       const entrega=document.getElementById('entrega').value.trim();
       const ubicacion=document.getElementById('ubicacion').value.trim();
       const observacion=document.getElementById('observacion').value.trim();
+      const qty=Number(cantidad||1);
+      const attribution=(window.InMedTracking&&window.InMedTracking.getAttribution)?window.InMedTracking.getAttribution():{};
+      const origin=[attribution.utm_source,attribution.utm_campaign].filter(Boolean).join(' / ')||'sitio web';
       const msg=[
-        'Hola InMed, quiero consultar disponibilidad del kit de sutura en Paraguay.',
+        qty>=5 ? 'Hola InMed, quiero consultar PRECIO MAYORISTA del Kit de Sutura.' : 'Hola InMed, quiero comprar el Kit de Sutura de 25 piezas.',
         '',
-        'Vi en la página la promo: Gs. 239.000 antes Gs. 260.000.',
+        'Precio visto en la página: Gs. 239.000 (antes Gs. 260.000).',
         '',
         `Nombre: ${nombre}`,
         `Teléfono: ${telefono}`,
         `Cantidad de kits: ${cantidad}`,
         `Forma de entrega: ${entrega || 'No informado'}`,
         `Ubicación: ${ubicacion || 'No informado'}`,
-        `Observación: ${observacion || 'Sin observación'}`
+        `Observación: ${observacion || 'Sin observación'}`,
+        '',
+        `Origen: ${origin}`
       ].join('\n');
+      window.InMedTracking?.track('generate_lead',{form:'order',quantity:qty,delivery:entrega||'unknown',wholesale:qty>=5});
       window.open('https://wa.me/595991950031?text='+encodeURIComponent(msg), '_blank', 'noopener');
     });
   </script>
 
 
-<script>
-(function(){
-  const canvas = document.getElementById('particles-js');
-  if (!canvas) return;
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const ctx = canvas.getContext('2d', { alpha: true });
-  let w = 0, h = 0, particles = [], raf = 0, resizeTimer = 0;
-  const color = { r: 232, g: 64, b: 40 };
-  const isMobile = () => (document.documentElement.clientWidth || window.innerWidth) < 720;
 
-  function viewportSize(){
-    const vw = document.documentElement.clientWidth || window.innerWidth || 360;
-    const vh = Math.ceil((window.visualViewport && window.visualViewport.height) || window.innerHeight || 640);
-    return { vw, vh };
-  }
 
-  function resize(){
-    const size = viewportSize();
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    w = size.vw;
-    h = size.vh;
-    canvas.width = Math.floor(w * dpr);
-    canvas.height = Math.floor(h * dpr);
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    createParticles();
-  }
-
-  function createParticles(){
-    const count = reduce ? 0 : (isMobile() ? 34 : 58);
-    particles = Array.from({ length: count }, () => ({
-      x: Math.random() * w,
-      y: Math.random() * h,
-      vx: (Math.random() - .5) * (isMobile() ? .28 : .34),
-      vy: (Math.random() - .5) * (isMobile() ? .28 : .34),
-      r: 1.35 + Math.random() * 1.9
-    }));
-  }
-
-  function draw(){
-    ctx.clearRect(0, 0, w, h);
-    const maxDist = isMobile() ? 112 : 150;
-    const dotAlpha = isMobile() ? .24 : .18;
-    const lineBase = isMobile() ? .18 : .15;
-    for (let i = 0; i < particles.length; i++) {
-      const p = particles[i];
-      p.x += p.vx; p.y += p.vy;
-      if (p.x < -20) p.x = w + 20; else if (p.x > w + 20) p.x = -20;
-      if (p.y < -20) p.y = h + 20; else if (p.y > h + 20) p.y = -20;
-
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(${color.r},${color.g},${color.b},${dotAlpha})`;
-      ctx.fill();
-
-      for (let j = i + 1; j < particles.length; j++) {
-        const q = particles[j];
-        const dx = p.x - q.x, dy = p.y - q.y;
-        const dist = Math.hypot(dx, dy);
-        if (dist < maxDist) {
-          const alpha = (1 - dist / maxDist) * lineBase;
-          ctx.beginPath();
-          ctx.moveTo(p.x, p.y);
-          ctx.lineTo(q.x, q.y);
-          ctx.strokeStyle = `rgba(${color.r},${color.g},${color.b},${alpha})`;
-          ctx.lineWidth = 1;
-          ctx.stroke();
-        }
-      }
-    }
-    raf = requestAnimationFrame(draw);
-  }
-
-  function scheduleResize(){
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      cancelAnimationFrame(raf);
-      resize();
-      draw();
-    }, 120);
-  }
-
-  if (!reduce) {
-    resize();
-    draw();
-    window.addEventListener('resize', scheduleResize, { passive: true });
-    window.addEventListener('orientationchange', scheduleResize, { passive: true });
-    if (window.visualViewport) {
-      window.visualViewport.addEventListener('resize', scheduleResize, { passive: true });
-      window.visualViewport.addEventListener('scroll', scheduleResize, { passive: true });
-    }
-  }
-})();
-</script>
-
-<script>
-(function(){
-  const strip = document.querySelector('.testimonial-strip');
-  const track = document.querySelector('.testimonial-track');
-  if (!strip || !track || track.dataset.autoScrollReady) return;
-  track.dataset.autoScrollReady = 'true';
-
-  // Ensure the sequence is long enough for a seamless loop.
-  const originals = Array.from(track.children);
-  if (originals.length && originals.length < 8) {
-    originals.forEach(node => track.appendChild(node.cloneNode(true)));
-  }
-
-  let x = 0, last = performance.now(), loopWidth = 0, paused = false;
-  function measure(){
-    // Half because the list is duplicated.
-    loopWidth = track.scrollWidth / 2;
-  }
-  function frame(now){
-    const dt = Math.min(40, now - last);
-    last = now;
-    if (!paused && loopWidth > 0) {
-      const speed = (document.documentElement.clientWidth < 720) ? 30 : 22; // px/s
-      x = (x + speed * dt / 1000) % loopWidth;
-      track.style.transform = `translate3d(${-x}px,0,0)`;
-    }
-    requestAnimationFrame(frame);
-  }
-
-  track.style.animation = 'none';
-  measure();
-  requestAnimationFrame(frame);
-  window.addEventListener('resize', () => { setTimeout(measure, 120); }, { passive:true });
-  if (window.visualViewport) window.visualViewport.addEventListener('resize', () => { setTimeout(measure, 120); }, { passive:true });
-  strip.addEventListener('mouseenter', () => { paused = true; });
-  strip.addEventListener('mouseleave', () => { paused = false; });
-  strip.addEventListener('touchstart', () => { paused = false; }, { passive:true });
-})();
-</script>
 
 <script>
 (function(){
@@ -1251,5 +1150,5 @@ Tu navegador no soporta video HTML5. <a href="https://inmed-py.github.io/kit-de-
   observer.observe(demoVideo);
 })();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1acff77fb5f83ea',t:'MTc4Mzk5NTA5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
