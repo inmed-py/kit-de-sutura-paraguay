@@ -733,6 +733,12 @@ iframe {
   }
 }
 
+
+/* InMed logo v3 — visual identity fix */
+.brand-logo{width:72px!important;height:72px!important;max-width:72px!important;object-fit:contain!important;display:block!important;flex:0 0 72px!important}
+.brand{display:flex!important;align-items:center!important;justify-content:flex-start!important;min-width:72px!important}
+@media(max-width:900px){.brand-logo{width:62px!important;height:62px!important;max-width:62px!important;flex-basis:62px!important}.brand{min-width:62px!important}}
+@media(max-width:420px){.brand-logo{width:58px!important;height:58px!important;max-width:58px!important;flex-basis:58px!important}.brand{min-width:58px!important}}
 </style>
 <script defer src="../site-analytics.js"></script>
 </head>
@@ -741,9 +747,7 @@ iframe {
   <div class="top-line"></div>
   <header>
     <div class="container nav">
-      <a class="brand" href="../" aria-label="INMED Educación Médica">
-        <img src="../img/logo-inmed-v2.webp" alt="InMed Educación Médica" class="brand-logo">
-      </a>
+      <a class="brand" href="../" aria-label="InMed Educación Médica" title="InMed Educación Médica"><img src="../img/logo-inmed-v3.webp" alt="InMed Educación Médica" title="InMed Educación Médica" class="brand-logo" width="72" height="72"></a>
       <nav class="nav-links" aria-label="Navegación principal">
         <a href="../">Inicio</a>
         <a href="./">Blog</a>
